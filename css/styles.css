@@ -508,10 +508,12 @@
 
 
 .portfolio-link:hover .portfolio-img-overlay {
-  opacity: 1;
+  visibility: visible;
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transform: translateY(0%);
+  transition: 250ms;
   }
 
 .portfolio-link {
@@ -614,9 +616,9 @@
   height: 294px;
   padding: 63px 24px;
   background: rgba(33, 150, 243, 0.9);
-  opacity: 0;
+  visibility: hidden;
   overflow: hidden;
-  transform: top;
+  transform: translateY(100%);
 }
 
 
@@ -665,7 +667,7 @@
 }
 
 .footer-contacts-link:hover,
-footer-contacts-link:focus {
+.footer-contacts-link:focus {
   color: var(--aceent-color);
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
